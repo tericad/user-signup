@@ -26,6 +26,7 @@ def signup():
         username_error = 'Username is required: It must be between 3-20 charachters with no spaces.'
     if len(password) < 3 or len(password) > 20 or " " in password:
         password = ''
+        verify_password = ''
         password_error = 'Password is required: It must be between 3-20 charachters with no spaces.'
     if verify_password != password:
         password = ''
